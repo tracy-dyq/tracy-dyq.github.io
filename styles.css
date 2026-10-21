@@ -1,0 +1,87 @@
+:root{--paper:#f4f1e9;--ink:#20362f;--muted:#657267;--line:#ccd1c6;--accent:#af5534}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}header{padding:25px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:32px "Centro Gothic","Century Gothic",Arial,Helvetica,sans-serif}.brand span{font:bold 11px Arial,sans-serif;letter-spacing:3px;margin-left:15px}nav{display:flex;gap:28px;font-size:13px}nav a:hover{color:var(--accent)}.menu{display:none}h1,h2,h3{font-family:"Centro Gothic","Century Gothic",Arial,Helvetica,sans-serif;font-weight:normal;line-height:1.1}h1{font-size:clamp(49px,5.8vw,84px);letter-spacing:-3px;margin:20px 0 28px;white-space:pre-line}h2{font-size:clamp(34px,3.5vw,49px);letter-spacing:-1px;margin:10px 0 20px}h3{font-size:29px;margin:10px 0}p{margin:0 0 22px}.eyebrow{color:var(--accent);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:bold}.hero{padding:65px 5% 35px;display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:center}.intro{max-width:460px;color:var(--muted)}img{display:block;width:100%}.hero img{height:auto;object-fit:contain}.note,figcaption{font-size:11px;color:var(--muted);margin-top:10px}.button{display:inline-block;border:0;background:var(--ink);color:var(--paper);font-size:13px;padding:12px 22px}.button:hover{background:var(--accent)}.bar{margin:15px 5% 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;font-size:11px;text-transform:uppercase;letter-spacing:1px}.section{padding:70px 5%}.head{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:30px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filters button{background:none;border:1px solid var(--line);color:var(--ink);padding:7px 14px;font-size:12px}.filters button[aria-pressed=true]{background:var(--ink);color:var(--paper)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:35px 28px}.card:first-child{grid-column:auto}.card img{height:auto;object-fit:contain}.card:first-child img{height:auto;aspect-ratio:auto}.card a:hover img{filter:brightness(1.12)}.card .meta{display:flex;justify-content:space-between;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:18px 0 10px}.card p{font-size:14px;color:var(--muted);max-width:600px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tag{border:1px solid var(--line);font-size:10px;padding:3px 9px}.publications{border-block:1px solid var(--line)}.pub{border-top:1px solid var(--line);padding:24px 0}.pub h3{font:20px/1.4 Arial,sans-serif}.pub a{color:var(--accent);font-size:12px;margin-right:18px}.about{display:grid;grid-template-columns:1fr 1.3fr;gap:10%;background:#142e27;color:var(--paper)}.about p{color:#c1cdbf}.about .eyebrow{color:#e2a075}.about .bio{font-size:19px}.teaching{max-width:950px}.contact{background:#e4e8db;display:grid;grid-template-columns:1.2fr 1fr;gap:10%;align-items:center}footer{padding:30px 5%;display:flex;justify-content:space-between;gap:20px;font-size:11px}.detail{padding:40px 5%}.detail .back{font-size:13px;color:var(--muted)}.detail .title{margin-top:45px}.detail>img{height:auto;max-height:none;object-fit:contain;margin-top:30px}.prose{max-width:780px;margin:55px auto}.prose section{margin-bottom:45px}.prose p{color:var(--muted)}.prose figure{margin:30px 0}.prose img{max-height:700px;object-fit:contain}.video{aspect-ratio:16/9}.video iframe,.video video{width:100%;height:100%;border:0}.skip{position:absolute;top:-100px;left:10px;background:white;padding:10px;z-index:20}.skip:focus{top:10px}.offline{font-size:11px;padding:8px 5%;background:#e4e8db;display:flex;gap:18px;align-items:center;flex-wrap:wrap}.offline button{border:0;background:none;text-decoration:underline;color:var(--ink);font-size:11px}.error{padding:80px 5%}[hidden]{display:none!important}@media(max-width:800px){header{position:relative;padding-block:19px}.menu{display:block;background:none;border:0;font-size:13px}nav{display:none;position:absolute;top:74px;left:0;right:0;padding:20px 5%;background:var(--paper);border-bottom:1px solid var(--line);z-index:10;flex-direction:column;gap:18px}nav.open{display:flex}.hero{grid-template-columns:1fr;padding-top:40px;gap:30px}h1{letter-spacing:-2px}.hero img{aspect-ratio:1.5}.bar span:last-child{display:none}.section{padding:50px 5%}.head{align-items:start;flex-direction:column}.grid,.about,.contact{grid-template-columns:1fr;gap:25px}.card:first-child{grid-column:auto}.card:first-child img{height:auto;aspect-ratio:auto}.about .bio{font-size:17px}.detail{padding-top:30px}.prose{margin-top:35px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Personal name in the header */
+header .brand{font:26px/1.25 "Centro Gothic","Century Gothic",Arial,Helvetica,sans-serif;white-space:nowrap;letter-spacing:-.5px}
+@media(max-width:800px){header .brand{font-size:22px}}
+@media(max-width:380px){header .brand{font-size:19px}}
+
+/* Preserve original image proportions without cropping. */
+.hero img,.card img,.card:first-child img,.detail>img{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain}
+
+/* Unified sans-serif display typography. */
+h1,h2,h3,header .brand{font-family:"Centro Gothic","Century Gothic",Arial,Helvetica,sans-serif}
+
+/* One font family across all website text and controls. */
+html,body,body *{font-family:"Centro Gothic","Century Gothic",Arial,Helvetica,sans-serif}
+
+/* Long footer introduction wraps cleanly on narrow screens. */
+footer{align-items:center;flex-wrap:wrap}footer .footer-description{flex:1 1 380px;text-align:center;overflow-wrap:break-word}
+@media(max-width:800px){footer .footer-description{flex-basis:100%;text-align:left;order:3}}
+
+/* Align About columns by their vertical centres. */
+.about{align-items:center}
+.about h2,.about .bio{margin-bottom:0}
+
+/* Contact links share one desktop row without a display heading. */
+.contact{display:block}
+.contact-actions{display:flex;align-items:center;gap:12px;flex-wrap:nowrap}
+.contact-actions .button{margin:0!important;white-space:nowrap}
+@media(max-width:800px){.contact-actions{flex-wrap:wrap}}
+
+/* Teaching: course code and year alongside title and skills. */
+.teaching-title{max-width:900px;margin-bottom:38px}
+.course-list{border-top:1px solid var(--line)}
+.course-row{display:grid;grid-template-columns:180px minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid var(--line)}
+.course-code{font-size:14px;font-weight:bold;letter-spacing:1px;margin:3px 0 8px}
+.course-years{font-size:12px;color:var(--muted);margin:0}
+.course-content h3{font-size:25px;margin:0 0 18px;line-height:1.3}
+.skills-label{font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);margin:0 0 9px}
+.course-skills{list-style:none;padding:0;margin:0;display:flex;gap:8px;flex-wrap:wrap}
+.course-skills li{font-size:12px;line-height:1.5;padding:5px 11px;background:#e5e9df;border:1px solid var(--line)}
+@media(max-width:800px){.course-row{grid-template-columns:1fr;gap:16px;padding:25px 0}.course-meta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.course-code{margin:0}.course-content h3{font-size:22px}.teaching-title{margin-bottom:28px}}
+
+/* Five Selected work categories below the section heading. */
+#work .head{flex-direction:column;align-items:flex-start}
+#work .filters{width:100%;gap:9px}
+
+/* Flexible ordered project text, images and videos. */
+.project-media{margin:40px 0}
+.project-text p{overflow-wrap:break-word}
+
+/* Keep the HIM-VRB cover colours unchanged on hover. */
+.card a[href="#project/him-vrb"]:hover img{filter:none}
+
+/* Independent project lead video, preserving the source video ratio. */
+.detail-lead{margin-top:30px}
+.video-file{aspect-ratio:auto;background:#122b25}
+.video-file video{display:block;width:100%;height:auto}
+
+/* Allow all four contact buttons to wrap when space is limited. */
+.contact-actions{flex-wrap:wrap}
+
+/* Project covers retain their native ratio within a half-width desktop card. */
+#work .card,#work .card:first-child{grid-column:auto;min-width:0}
+#work .card img,#work .card:first-child img{display:block;width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain}
+
+/* Each project video has its own heading and summary. */
+.project-media h2{margin-bottom:16px}
+.project-media .video-summary{margin-bottom:24px}
+
+/* Repository resources alongside project media sections. */
+.project-resource{margin:45px 0}
+.project-resource h2{margin-bottom:20px}
+
+/* Optional two-column project detail layout. */
+.detail-two-column .prose{max-width:none}
+.project-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start;margin-bottom:40px}
+.project-column{min-width:0}
+.project-column>:first-child{margin-top:0}
+.detail-two-column .project-media h2,.detail-two-column .project-resource h2{font-size:clamp(24px,2.5vw,36px);line-height:1.2}
+@media(max-width:800px){.project-columns{grid-template-columns:minmax(0,1fr);gap:40px}}
+
+/* Responsive Issuu portfolio readers with original publication links. */
+.project-publication{margin:45px 0 65px}
+.issuu-reader{position:relative;width:100%;aspect-ratio:4/3;min-height:420px;background:#e4e8df;border:1px solid var(--line)}
+.issuu-reader iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.prose .issuu-source{margin-top:12px;font-size:13px}
+.issuu-source a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:800px){.issuu-reader{min-height:320px}}
