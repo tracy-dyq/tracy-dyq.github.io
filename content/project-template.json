@@ -1,0 +1,38 @@
+{
+  "id": "your-project-id",
+  "title": "Your project title",
+  "category": "XR Tracking",
+  "subtitle": "Your project subtitle",
+  "cover": "assets/xr-tracking.svg",
+  "alt": "Describe your cover image",
+  "note": "Replace this illustrative cover with your own image.",
+  "summary": "Your short project description.",
+  "tags": [],
+  "sections": [],
+  "gallery": [],
+  "video": {
+    "type": "",
+    "src": "",
+    "title": ""
+  },
+  "blocks": [
+    {
+      "type": "text",
+      "heading": "Overview",
+      "body": "Describe the project here."
+    },
+    {
+      "type": "image",
+      "src": "",
+      "alt": "",
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "provider": "",
+      "src": "",
+      "title": "",
+      "caption": ""
+    }
+  ]
+}
